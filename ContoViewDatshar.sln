@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContoViewDatshar", "ContoVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCwithADO", "MVCwithADO\MVCwithADO.csproj", "{05EE919A-E7EA-4620-B98B-6219B8882D71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDBfirstApproach", "EFDBfirstApproach\EFDBfirstApproach.csproj", "{4BDD5AD4-B6D2-4E59-B931-9DD33CFDD7BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{05EE919A-E7EA-4620-B98B-6219B8882D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05EE919A-E7EA-4620-B98B-6219B8882D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05EE919A-E7EA-4620-B98B-6219B8882D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDD5AD4-B6D2-4E59-B931-9DD33CFDD7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDD5AD4-B6D2-4E59-B931-9DD33CFDD7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDD5AD4-B6D2-4E59-B931-9DD33CFDD7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDD5AD4-B6D2-4E59-B931-9DD33CFDD7BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
