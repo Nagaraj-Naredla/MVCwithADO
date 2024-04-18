@@ -1,0 +1,41 @@
+﻿
+@model MVCwithADO.Models.Employees
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form action="/Employees/Update" method="post">
+            <div class="mb-3">
+                <label for="empID" class="form-label"> EmployeeID</label>
+                <input type="text" class="form-control" placeholder="Enter EmployeeID" id="empID" readonly value="@Model.EmpID" name="EmpID">
+            </div>
+            <div class="mb-3">
+                <label for="empName" class="form-label"> Employee Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name" id="empName" value="@Model.EmpName" name="EmpName">
+            </div>
+            <div class="mb-3">
+                <label for="salary" class="form-label">Salary</label>
+                <input type="text" class="form-control" placeholder="Enter Salary" id="salary" value="@Model.Salary" name="Salary">
+            </div>
+            <div class="mb-3">
+                <label for="job" class="form-label"> Job</label>
+                <input type="text" class="form-control" placeholder="Enter Job" id="job" value="@Model.Job" name="Job">
+            </div>
+            <div class="mb-3">
+                <label for="deptID" class="form-label">DepartmentID</label>
+                <input type="text" class="form-control" placeholder="Enter DepartmentID" id="deptID" value="@Model.DeptID" name="DeptID">
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+        <div>
+            <a href="/" class="btn btn-outline-info">Back to Index</a>
+        </div>
+    </div>
+</body>
+</html>

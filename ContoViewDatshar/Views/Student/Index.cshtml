@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />>
+</head>
+<body>
+    <div> 
+        <h1>DataSharing Between Controller to View by Using DataView</h1>
+        <hr />
+        Student ID is:@ViewData["StudentID"] <br />
+        Student Name is: @ViewData["StudentName"] <br />
+       @* Student Marks are:@ViewData["Marks"]*@
+        @{ 
+            int total = 0;
+            int[] ar = ViewData["Marks"] as int[];
+            foreach(var item in ar)
+            {
+                total = total + item;
+            }
+            <h3>Total Mark is: @total</h3>
+            int avg = total / ar.Length;
+            <h3>Average  is:@avg</h3>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <div> 
+        <h1>DataSaharing from C to View by using ViewBag</h1>
+        <hr />
+        Student Id is: @ViewBag.StudentID
+        Studeng Name is @ViewBag.StudentName
+        @{ 
+            int total = 0;
+            int[] marks = ViewBag.Marks;
+            foreach (var item in marks)
+            {
+                total = total + item;
+            }
+            <h3>Total Marks is:@total</h3>
+            int avg = total / marks.Length;
+            <h4>Average is:@avg</h4>
+        }
+    </div>
+</body>
+</html>

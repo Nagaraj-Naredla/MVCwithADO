@@ -1,0 +1,41 @@
+﻿@*step3 Specify DataType in View Page(Type Of Data)*@
+@model List<ContoViewDatshar.Models.Emp>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Strongly Typed Views</h1>
+        <!--Access the Data By using Model-->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>EmpID</th>
+                        <th>EmpName</th>
+                        <th>EmpSalary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.EmpId</td>
+                            <td>@item.EmpName</td>
+                            <td>@item.EmpSalary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, if you need JavaScript functionality from Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
